@@ -1,0 +1,27 @@
+{
+  "name": "poplar-3pg-model",
+  "version": "1.0.0",
+  "description": "3PG poplar growth model",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSTARS/poplar-3pg-model.git"
+  },
+  "keywords": [
+    "poplar",
+    "3pg",
+    "Advanced",
+    "Hardwood",
+    "Biofuels",
+    "AHB"
+  ],
+  "author": "Justin Merz <jrmerz@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSTARS/poplar-3pg-model/issues"
+  },
+  "homepage": "https://github.com/CSTARS/poplar-3pg-model#readme"
+}
