@@ -1,6 +1,6 @@
 {
   "name": "poplar-3pg-model",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "3PG poplar growth model",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "AHB"
   ],
   "author": "Justin Merz <jrmerz@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/CSTARS/poplar-3pg-model/issues"
   },
