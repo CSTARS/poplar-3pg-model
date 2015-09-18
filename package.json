@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/CSTARS/poplar-3pg-model/issues"
   },
-  "homepage": "https://github.com/CSTARS/poplar-3pg-model#readme"
+  "homepage": "https://github.com/CSTARS/poplar-3pg-model#readme",
+  "devDependencies": {
+    "extend": "^3.0.0"
+  }
 }
