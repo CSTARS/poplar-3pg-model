@@ -11,6 +11,11 @@ model.plantingParams = {
   yearsPerCoppice : 3
 };
 
+model.manage = {
+  irrigFrac : 1, // how much irrigation (0-1);
+  fertility : 0.7 // Soil fertility
+};
+
 var data = model.run(48);
 
 console.log(data);
