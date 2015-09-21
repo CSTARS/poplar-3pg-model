@@ -9,6 +9,8 @@ model.plantingParams = {
   datePlanted  : new Date(2014, 4, 1),
   dateCoppiced : new Date(2016, 9, 1),
   yearsPerCoppice : 3
+  // this will override dataCoppiced && yearsPerCoppice
+  //coppiceDates : ['2016-08','2018-07','2020-09']
 };
 
 model.manage = {
@@ -16,6 +18,8 @@ model.manage = {
   fertility : 0.7 // Soil fertility
 };
 
-var data = model.run(48);
+var data = model.run(200);
 
-console.log(data);
+
+console.log('done.');
+//console.log(data);
