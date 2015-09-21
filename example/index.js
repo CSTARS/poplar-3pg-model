@@ -15,7 +15,22 @@ model.manage = {
   //coppiceDates : ['2016-08','2018-07','2020-09']
 };
 
-var data = model.run(200);
+
+model.debug = true;
+var data;
+/*if( process.argv.length > 2 ) {
+  model.dailyStep = true;
+  data = model.run(7300);
+} else {
+  data = model.run(240);
+}*/
+data = model.run(240);
+
+data = model.run(7300);
+
+for( var i = 0; i < data[0].length; i++ ) {
+  console.log(data[0][i]+': '+data[data.length-1][i]);
+}
 
 
 console.log('done.');
