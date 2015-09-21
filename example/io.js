@@ -12,12 +12,6 @@ module.exports = {
 
     // use the default tree values from the data model
     readDefaultTree(model);
-
-    // read default plantation state
-    model.plantation_state = {};
-    for ( var key in model.getDataModel().plantation_state.value ) {
-        model.plantation_state[key] = -1;
-    }
   },
 
   dump : function(rows) {

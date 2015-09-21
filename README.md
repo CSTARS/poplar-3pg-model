@@ -10,4 +10,31 @@ The Advanced Hardwood Biofuels Northwest project homepage is here: [hardwoodbiof
 
 ## Running Model
 
-TODO: For now, checkout the example/index.js for how to setup the model and run.
+Checkout the [example/index.js](example/index.js) for how to setup the model and run.
+
+You can see an example of all parameters required to run the model here: [example/fullSampleInputs.json](example/fullSampleInputs.json)
+
+#### The basics
+
+Install from NPM
+```
+npm install poplar-3pg-model
+```
+
+Run model
+
+```
+var model = require('poplar-3pg-model');
+
+// set input parameters to model (again see example/fullSampleInputs.json);
+setParams(model);
+
+// run model for 100 months
+
+try {
+  var results = model.run(100);
+} catch(e) {
+  // the model will preform simple validation an throw errors if
+  // inputs are is missing.
+}
+```

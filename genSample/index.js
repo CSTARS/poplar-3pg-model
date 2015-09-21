@@ -1,5 +1,6 @@
+var fs = require('fs');
 var model = require('../index.js');
-var modelIO = require('./io.js');
+var modelIO = require('../example/io.js');
 
 model.setIO(modelIO);
 
@@ -15,7 +16,13 @@ model.manage = {
   //coppiceDates : ['2016-08','2018-07','2020-09']
 };
 
-var data = model.run(200);
+model.run(2);
 
+var sample = {
+  manage : model.manage,
+  weather : model.weather,
+  soil : model.soil,
+  plantation : model.plantation
+};
 
-console.log('done.');
+fs.writeFileSync(__dirname+'/../example/fullSampleInputs.json', JSON.stringify(sample, '  ', '  '));
