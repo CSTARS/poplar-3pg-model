@@ -18,15 +18,13 @@ model.manage = {
 
 model.debug = true;
 var data;
-/*if( process.argv.length > 2 ) {
+if( process.argv.length > 2 ) {
   model.dailyStep = true;
   data = model.run(7300);
 } else {
   data = model.run(240);
-}*/
-data = model.run(240);
-
-data = model.run(7300);
+}
+//data = model.run(240);
 
 for( var i = 0; i < data[0].length; i++ ) {
   console.log(data[0][i]+': '+data[data.length-1][i]);
